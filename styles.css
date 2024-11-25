@@ -1,0 +1,309 @@
+/* Remove margens e preenchimentos do corpo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #121212;
+  overflow: hidden; /* Impede rolagem */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Define a altura da tela como 100% da janela */
+}
+
+/* Home */
+#home {
+  background: url('./img/logo\ \(1\).png') no-repeat center center;
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed; /* Fixa o header no topo */
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* Garante que o header esteja acima do conteúdo */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffd700;
+}
+
+#sobre {
+ 
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  position: fixed; /* Fixar a seção sobre a tela */
+  width: 100%;
+  height: 100vh; /* Tamanho total da tela */
+  background-color: rgba(30, 30, 30, 0.9); /* Fundo semi-transparente para sobrepor */
+  color: white;
+  text-align: center;
+  padding: 50px;
+  display: none; /* Inicialmente invisível, será exibido ao clicar */
+  overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura */
+  z-index: 500; /* Garante que a seção fique sobre a imagem e outros elementos */
+  top: 0; /* Alinha o topo da seção ao topo da página */
+  left: 0; /* Garante que a seção ocupe toda a largura da tela */
+  padding-top: 200px; /* Ajuste o padding superior para dar espaço para o cabeçalho fixo */
+}
+
+#sobre h2 {
+  font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+  color: #ffd700;
+  margin-bottom: 20px; /* Maior espaço entre o título e o conteúdo */
+}
+
+#sobre p {
+  font-size: 1.2rem; /* Aumenta o tamanho do texto */
+  line-height: 1.6;
+  max-width: 900px; /* Aumenta a largura máxima para que o texto ocupe mais espaço */
+  margin: 0 auto;
+  text-align: justify;
+  padding: 10px; /* Adiciona um pouco de preenchimento ao redor do texto */
+}
+
+
+/* Rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Ícones Sociais */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white; /* Cor padrão para todos os ícones */
+  transition: color 0.3s;
+}
+
+/* Definindo cores oficiais para os ícones */
+.social-icons li a i.fa-instagram {
+  color: #E4405F; /* Cor oficial do Instagram */
+}
+
+.social-icons li a i.fa-facebook {
+  color: #1877F2; /* Cor oficial do Facebook */
+}
+
+.social-icons li a i.fa-whatsapp {
+  color: #25D366; /* Cor oficial do WhatsApp */
+}
+
+/* Efeito de hover */
+.social-icons li a:hover i {
+  opacity: 0.7; /* Efeito de hover para os ícones */
+}
+
+/* Galeria sobrepondo a imagem da Home */
+
+/* Estilo para a seção Agenda */
+#Agenda {
+  background-color: rgba(30, 30, 30, 0.9); /* Fundo semi-transparente */
+  color: white;
+  padding: 50px;
+  text-align: center;
+  display: none; /* Inicialmente invisível, será exibido ao clicar */
+  z-index: 500; /* Garante que a seção fique sobre outras */
+  overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura */
+  position: relative;
+}
+
+#Agenda h2 {
+  font-size: 2.5rem; /* Tamanho maior do título */
+  color: #ffd700; /* Cor do título */
+  margin-bottom: 20px;
+}
+
+#Agenda p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 10px;
+}
+
+#Agenda ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#Agenda ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.1); /* Fundo ligeiramente translúcido */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#Agenda ul li:hover {
+  background: rgba(255, 255, 255, 0.2); /* Efeito de hover para destacar o item */
+  cursor: pointer;
+}
+
+.image-agenda {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Responsividade: Ajuste para telas pequenas */
+  #Agenda h2 {
+    font-size: 2rem;
+  }
+
+  #Agenda p {
+    font-size: 1rem;
+  }
+
+  #Agenda ul li {
+    font-size: 1rem;
+  }
+
+  .image-agenda {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Galeria */
+/* Aplica a estilização de rolagem à galeria */
+#galeria {
+  max-height: 80vh; /* Define um limite para a altura da galeria */
+  overflow-y: scroll; /* Habilita a rolagem vertical */
+  scrollbar-width: thin; /* Para navegadores compatíveis, define a barra como fina */
+  scrollbar-color: #ffd700 rgba(0, 0, 0, 0.5); /* Cor personalizada: barra (dourada) e trilho (cinza escuro) */
+}
+
+/* Para navegadores baseados em Webkit (Chrome, Edge, Safari, Opera) */
+#galeria::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+#galeria::-webkit-scrollbar-thumb {
+  background: #ffd700; /* Cor da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+#galeria::-webkit-scrollbar-thumb:hover {
+  background: #ffc107; /* Cor mais clara ao passar o rato */
+}
+
+#galeria::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5); /* Cor do trilho */
+  border-radius: 10px;
+}
+#galeria h3 {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 120px;
+}
+
+
+
+.image-content {
+  width: auto; /* Ajuste a largura conforme necessário *//* Ajuste a largura conforme necessário */
+  height: auto;
+  margin-bottom: 10px; /* Espaço entre as imagens */
+}
+
+/* Estilo das imagens da galeria */
+.image-content {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer; /* Indica que a imagem é clicável */
+}
+
+#modal {
+  display: none; /* Inicialmente invisível */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+  justify-content: center; /* Centraliza o conteúdo horizontal e verticalmente */
+  align-items: center; /* Centraliza o conteúdo */
+  z-index: 1000;
+  overflow: hidden; /* Impede rolagem no modal */
+}
+
+/* Imagem dentro do modal */
+#modalImage {
+  max-width: 100%; /* A imagem pode ocupar toda a largura do modal */
+  max-height: 100%; /* A imagem pode ocupar toda a altura do modal */
+  object-fit: contain; /* Mantém as proporções da imagem */
+  display: block; /* Garante que a imagem seja exibida como bloco */
+  margin: 0 auto; /* Centraliza a imagem dentro do modal */
+  cursor: pointer; /* Indica que a imagem é clicável */
+  transition: all 0.5s ease; /* Transição suave */
+}
+
+/* Fechar o modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo de Pagode</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Arquivo de estilo externo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Bem-vindos ao site oficial! <br>Bem de Samba</h1>
+    <nav>
+      <ul>
+        <li><a href="javascript:void(0);" id="btnHome">Home</a></li>
+        <li><a href="javascript:void(0);" id="btnAgenda">Agenda</a></li>
+        <li><a href="javascript:void(0);" id="btnGaleria">Galeria</a></li>
+        <li><a href="javascript:void(0);" id="btnSobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" >
+    <div class="banner">
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="Agenda" style="display: none;">
+    <h2>Agenda</h2>
+    <ul>
+      <li>Seu  Conrado - 22/11/2024 às 19:30 - Shoping Buena Vista - Eusebio </li>
+      <li>Quintal do Samba - 23/11/2024 às 19:30 - R. Paulino Nogueira, 91 - Benfica</li>
+    </ul>
+  </section>
+  
+ <!-- Galeria -->
+<section id="galeria" style="display: none;">
+  <h3>Clique para ampliar a imagem</h3>
+  
+  
+  <div class="galeria-imagens">
+    <img src="./img/IMG-20241123-WA0013.jpg" class="image-content" alt="Imagem 1">
+    <img src="./img/IMG-20241123-WA0014.jpg" class="image-content" alt="Imagem 2">
+    <img src="./img/IMG-20241123-WA0012.jpg" class="image-content" alt="">
+    <img src="./img/logo (10).png" class="image-content"alt="">
+    <img src="./img/logo (11).png" class="image-content" alt="">
+    <img src="./img/logo (12).png" class="image-content" alt="">
+    <img src="./img/logo (13).png" class="image-content" alt="">
+    <img src="./img/logo (14).png" class="image-content" alt="">
+    <img src="./img/logo (15).png" class="image-content" alt="">
+    <img src="./img/logo (16).png" class="image-content" alt="">
+    <img src="./img/logo (17).png" class="image-content" alt="">
+    <img src="./img/logo (18).png" class="image-content" alt="">
+    <img src="./img/logo (1).png"  class="image-content" alt="">
+    <img src="./img/logo (2).png"  class="image-content" alt="">
+    <img src="./img/logo (3).png"  class="image-content" alt="">
+    <img src="./img/logo (4).png"  class="image-content" alt="">
+    <img src="./img/logo (5).png"  class="image-content" alt="">
+    <img src="./img/logo (6).png"  class="image-content" alt="">
+    <img src="./img/logo (7).png"  class="image-content" alt="">
+    <img src="./img/logo (8).png"  class="image-content" alt="">
+    <img src="./img/logo (9).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (1).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (2).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (3).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (4).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (5).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (6).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (7).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (8).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (9).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (10).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (11).png"  class="image-content" alt=""> 
+    <img src="./img/FOTO 2 (12).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (13).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (14).png"  class="image-content" alt=""> 
+    <img src="./img/FOTO 2 (15).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (16).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (17).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (18).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (19).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (20).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (21).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (22).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (23).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (24).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (25).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (26).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (27).png"  class="image-content" alt="">
+    <img src="./img/FOTO 2 (28).png"  class="image-content" alt="">
+
+  </div>
+  <!-- Modal para exibir a imagem ampliada -->
+  <div class="modal" id="modal">
+      <span class="close" id="closeModal">&times;</span>
+      <img id="modalImage" src="" alt="Imagem Ampliada">
+  </div>
+  
+</section>
+
+
+  <!-- Seção Sobre (inicialmente oculta) -->
+  <section id="sobre" style="display: none;">
+
+      <p>O <strong>Grupo Bem de Samba</strong> é uma das principais referências do samba e pagode em Fortaleza. Com uma trajetória marcada pela energia contagiante e um repertório que mistura clássicos do samba com hits modernos, o grupo tem conquistado o coração do público cearense e além. Formado por músicos talentosos e apaixonados pela música popular brasileira, o Bem de Samba tem se destacado pela autenticidade e pela capacidade de transformar qualquer evento em uma verdadeira festa.</p>
+      <p>Com apresentações em diversos eventos, como shows, festas privadas, e grandes festivais, o grupo é conhecido pelo carisma de seus integrantes e pela presença de palco imbatível. Sempre com muita alegria, ritmo e aquele "jeitinho" especial do samba e pagode, o <strong>Bem de Samba</strong> leva para o público uma mistura de tradição e inovação, encantando a todos com sua musicalidade e energia.</p>
+      <p>Seja nas festas mais intimistas ou nos grandes palcos, o <strong>Grupo Bem de Samba</strong> é garantia de diversão, emoção e muita música boa!</p>
+      <p>Sua formção atual hoje é composta por:</p>
+      <ul>
+        <li><strong>Adriano</strong> - Vocal principal, responsável por comandar a voz e a energia do grupo.</li>
+        <li><strong>Roberto</strong> - Violonista, com uma pegada única, que dá a base harmônica ao grupo.</li>
+        <li><strong>JM Silva</strong> - Percussionista talentoso, também contribui com vocais de apoio e participação no vocal.</li>
+        <li><strong>Pequeno</strong> - Cavaco , com contribuições no vocal e backvocal, adicionando charme e ritmo ao som do grupo.</li>
+        <li><strong>Daniel</strong> - Especialista no tantã e surdo, trazendo ritmo forte para a batida e também oferecendo vocais de apoio.</li>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Siga nossas redes sociais:</p>
+    <ul class="social-icons">
+      <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="https://wa.me/5585999441542" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+    </ul>
+    <p>&copy; 2024 Grupo Bem de Samba. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
