@@ -12,16 +12,34 @@ body {
 }
 
 /* Home */
+/* Home */
 #home {
-  background: url('./img/logo\ \(1\).png') no-repeat center center;
-  background-size: cover; /* Faz a imagem cobrir toda a área */
-  height: 100vh;
+  background: url('./img/logo\ \(1\).png') no-repeat center center; /* Caminho para o logo */
+  background-size: cover; /* Ajusta o tamanho da imagem proporcionalmente */
+  height: 100vh; /* Altura de 100% da altura da janela */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza o conteúdo verticalmente */
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: center; 
+  align-items: center;
   text-align: center;
+  color: white;
+  padding: 20px; /* Adiciona um espaço interno para evitar que o conteúdo encoste nas bordas */
 }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  #home {
+      background-position: center; /* Centraliza o fundo */
+      background-size: contain; /* Garante que a imagem não corte em telas menores */
+      padding: 10px;
+  }
+
+  #home h2 {
+      font-size: 1.5rem; /* Reduz o tamanho do título */
+  }
+}
+
+
 
 /* Cabeçalho */
 header {
@@ -60,39 +78,75 @@ header nav ul li a:hover {
   color: #ffd700;
 }
 
+/* Sobre */
 #sobre {
- 
   background-size: cover; /* Faz a imagem cobrir toda a área */
-  position: fixed; /* Fixar a seção sobre a tela */
+  position: fixed; /* Fixa a seção sobre a tela */
   width: 100%;
   height: 100vh; /* Tamanho total da tela */
-  background-color: rgba(30, 30, 30, 0.9); /* Fundo semi-transparente para sobrepor */
+  background-color: rgba(30, 30, 30, 0.9); /* Fundo semi-transparente */
   color: white;
   text-align: center;
   padding: 50px;
-  display: none; /* Inicialmente invisível, será exibido ao clicar */
+  display: none; /* Inicialmente invisível */
   overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura */
-  z-index: 500; /* Garante que a seção fique sobre a imagem e outros elementos */
+  z-index: 500; /* Garante que a seção fique sobre outros elementos */
   top: 0; /* Alinha o topo da seção ao topo da página */
   left: 0; /* Garante que a seção ocupe toda a largura da tela */
-  padding-top: 200px; /* Ajuste o padding superior para dar espaço para o cabeçalho fixo */
+  padding-top: 200px; /* Espaço para o cabeçalho fixo */
 }
 
-#sobre h2 {
-  font-size: 2.5rem; /* Aumenta o tamanho da fonte */
-  color: #ffd700;
-  margin-bottom: 20px; /* Maior espaço entre o título e o conteúdo */
+/* Conteúdo do título */
+#sobre h4 {
+  font-size: 2.5rem; /* Tamanho da fonte maior */
+  color: white;
+  margin-bottom: 20px; /* Espaço entre o título e o texto */
 }
 
+/* Texto */
 #sobre p {
-  font-size: 1.2rem; /* Aumenta o tamanho do texto */
+  font-size: 1.2rem; /* Tamanho maior para boa leitura */
   line-height: 1.6;
-  max-width: 900px; /* Aumenta a largura máxima para que o texto ocupe mais espaço */
+  max-width: 900px; /* Largura máxima */
   margin: 0 auto;
   text-align: justify;
-  padding: 10px; /* Adiciona um pouco de preenchimento ao redor do texto */
+  padding: 10px; /* Preenchimento interno */
 }
 
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  #sobre {
+      padding: 20px; /* Reduz o preenchimento */
+      padding-top: 100px; /* Espaço superior para cabeçalho */
+      background-size: contain; /* Evita cortes no fundo */
+  }
+
+  #sobre h4 {
+      font-size: 1.8rem; /* Reduz tamanho do título */
+  }
+
+  #sobre p {
+      font-size: 1rem; /* Texto menor */
+      line-height: 1.4; /* Menos espaço entre linhas */
+  }
+}
+
+/* Ajustes para telas muito pequenas (ex.: celulares) */
+@media (max-width: 480px) {
+  #sobre h2 {
+      font-size: 1.5rem;
+  }
+
+  #sobre p {
+      font-size: 0.9rem;
+  }
+}
+
+/* Exibindo a seção quando ativada */
+#sobre.show {
+  display: block; /* Tornar a seção visível */
+  overflow-y: scroll; /* Habilitar a rolagem vertical se necessário */
+}
 
 /* Rodapé */
 footer {
@@ -159,10 +213,11 @@ footer p {
   position: relative;
 }
 
-#Agenda h2 {
+#Agenda h3 {
+  padding: 50px;
   font-size: 2.5rem; /* Tamanho maior do título */
   color: #ffd700; /* Cor do título */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #Agenda p {
